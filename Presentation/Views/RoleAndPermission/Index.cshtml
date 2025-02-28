@@ -1,4 +1,6 @@
-            <div class="table-responsive col-10 col-md-8 d-flex justify-content-start form-bg my-5 p-3 mx-auto m-sm-5 shadow my-3">
+@model DAL.ViewModels.RoleAndPermissionViewModel            
+            
+    <div class="table-responsive col-10 col-md-8 d-flex justify-content-start form-bg my-5 p-3 mx-auto m-sm-5 shadow my-3">
                 <table class="table">
                     <thead class="color-head">
                         <tr class="text-start">
@@ -11,7 +13,7 @@
                         {
                             <tr class="text-start">
                                 <td>@role.Name</td>
-                                <td><a href="./userPermissions.html"><img src="./images/icons/edit.svg" class="small-image" alt=""></a></td>
+                                <td><a onclick="openPermissions(@role.Id)"><img src="./images/icons/edit.svg" class="small-image" alt=""></a></td>
                             </tr>
                         }
                     </tbody>
@@ -19,3 +21,9 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function openPermissions(id) {
+            window.location.href = "/RoleAndPermission/EditPermissions/" + id;
+        }
+    </script>

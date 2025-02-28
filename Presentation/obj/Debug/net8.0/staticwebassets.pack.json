@@ -477,6 +477,10 @@
       "PackagePath": "staticwebassets\\js\\dashboard.js"
     },
     {
+      "Id": "C:\\Users\\pci88\\Downloads\\pizzashop-backend-validations-commit - Copy\\Presentation\\wwwroot\\js\\editPermissions.js",
+      "PackagePath": "staticwebassets\\js\\editPermissions.js"
+    },
+    {
       "Id": "C:\\Users\\pci88\\Downloads\\pizzashop-backend-validations-commit - Copy\\Presentation\\wwwroot\\js\\editProfile.js",
       "PackagePath": "staticwebassets\\js\\editProfile.js"
     },
@@ -511,10 +515,6 @@
     {
       "Id": "C:\\Users\\pci88\\Downloads\\pizzashop-backend-validations-commit - Copy\\Presentation\\wwwroot\\js\\userList.js",
       "PackagePath": "staticwebassets\\js\\userList.js"
-    },
-    {
-      "Id": "C:\\Users\\pci88\\Downloads\\pizzashop-backend-validations-commit - Copy\\Presentation\\wwwroot\\js\\userPermissions.js",
-      "PackagePath": "staticwebassets\\js\\userPermissions.js"
     },
     {
       "Id": "C:\\Users\\pci88\\Downloads\\pizzashop-backend-validations-commit - Copy\\Presentation\\wwwroot\\lib\\bootstrap\\LICENSE",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9c5oIXI4Hhxf2H0gFlb1oZ0vUawwYBRzhnjKvg8VVZM=",
+  "Hash": "JICN1gWDHDZJNuHnA6j1KXcbZglm8rInMjPTtGgbWv4=",
   "Source": "Presentation",
   "BasePath": "_content/Presentation",
   "Mode": "Default",
@@ -2354,6 +2354,25 @@
       "OriginalItemSpec": "wwwroot\\js\\dashboard.js"
     },
     {
+      "Identity": "C:\\Users\\pci88\\Downloads\\pizzashop-backend-validations-commit - Copy\\Presentation\\wwwroot\\js\\editPermissions.js",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pci88\\Downloads\\pizzashop-backend-validations-commit - Copy\\Presentation\\wwwroot\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "js/editPermissions.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\editPermissions.js"
+    },
+    {
       "Identity": "C:\\Users\\pci88\\Downloads\\pizzashop-backend-validations-commit - Copy\\Presentation\\wwwroot\\js\\editProfile.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
@@ -2523,25 +2542,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\userList.js"
-    },
-    {
-      "Identity": "C:\\Users\\pci88\\Downloads\\pizzashop-backend-validations-commit - Copy\\Presentation\\wwwroot\\js\\userPermissions.js",
-      "SourceId": "Presentation",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pci88\\Downloads\\pizzashop-backend-validations-commit - Copy\\Presentation\\wwwroot\\",
-      "BasePath": "_content/Presentation",
-      "RelativePath": "js/userPermissions.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\userPermissions.js"
     },
     {
       "Identity": "C:\\Users\\pci88\\Downloads\\pizzashop-backend-validations-commit - Copy\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",

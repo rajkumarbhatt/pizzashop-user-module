@@ -1,4 +1,4 @@
-var controllers = ['Dashboard', 'UserList', 'RoleAndPermission']
+var controllers = ['Dashboard', 'UserList', 'RoleAndPermission', 'Menu', 'TableAndSection', 'TaxAndFee', 'Order', 'Customer']
 
 
 var url = window.location.pathname;

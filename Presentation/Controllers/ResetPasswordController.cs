@@ -5,16 +5,17 @@ using BLL.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using BCrypt.Net;
 using BLL.Interfaces;
+using DAL.DBContext;
 
 namespace Presentaion.Controllers
 {
     public class ResetPasswordController : Controller
     {
-        private readonly PizzashopContext _context;
+        private readonly PizzaShopContext _context;
         private readonly IJwtService _jwtService;
         private readonly IResetPasswordService _resetPasswordService;
 
-        public ResetPasswordController(PizzashopContext context, IJwtService jwtService, IResetPasswordService resetPasswordService)
+        public ResetPasswordController(PizzaShopContext context, IJwtService jwtService, IResetPasswordService resetPasswordService)
         {
             _context = context;
             _jwtService = jwtService;

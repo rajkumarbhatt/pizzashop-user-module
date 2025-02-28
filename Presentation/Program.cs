@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using BLL.Interfaces;
+using DAL.ViewModels;
+using DAL.DBContext;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,7 +15,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSession();
-builder.Services.AddDbContext<PizzashopContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<PizzaShopContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<ILoginService, LoginService>();
 builder.Services.AddSingleton<IEmailService, EmailService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
@@ -22,6 +24,7 @@ builder.Services.AddScoped<IProfileService, ProfileService>();
 builder.Services.AddScoped<INavBarService, NavBarService>();
 builder.Services.AddScoped<IUserListService, UserListService>();
 builder.Services.AddScoped<IResetPasswordService, ResetPasswordService>();
+builder.Services.AddScoped<IRoleAndPermissionService, RoleAndPermissionService>();
 
 builder.Services.AddNotyf(config =>
 {
@@ -84,4 +87,4 @@ app.MapControllerRoute(
 app.Run();
 
 
-// dotnet ef dbcontext scaffold "Host=localhost;Database=pizzashop;Username=postgres;Password=Tatva@123" Npgsql.EntityFrameworkCore.PostgreSQL -o ../DAL/Models --context PizzaShopDbContext --context-dir ../DAL/DbContext -f 
+// dotnet ef dbcontext scaffold "Host=localhost;Port=5433;Database=pizzashop;Username=postgres;Password=Tatva@123" Npgsql.EntityFrameworkCore.PostgreSQL -o ../DAL/Models --context PizzaShopDbContext --context-dir ../DAL/DbContext -f 

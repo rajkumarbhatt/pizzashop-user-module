@@ -3,6 +3,7 @@ using DAL.Models;
 using DAL.ViewModels;
 using BLL.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using DAL.DBContext;
 
 
 namespace Presentaion.Controllers
@@ -10,9 +11,9 @@ namespace Presentaion.Controllers
     public class ForgotPasswordController : Controller
     {
         private readonly IEmailService _emailService;
-        private readonly PizzashopContext _context;
+        private readonly PizzaShopContext _context;
 
-        public ForgotPasswordController(IEmailService emailService, PizzashopContext context)
+        public ForgotPasswordController(IEmailService emailService, PizzaShopContext context)
         {
             _emailService = emailService;
             _context = context;

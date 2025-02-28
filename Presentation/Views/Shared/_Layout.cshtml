@@ -47,30 +47,30 @@
                         <span class="fw-bold sidebar-font" id="RoleAndPermission-span">Roles and Permissions</span>
                     </a>
                 }
-                <a href="./menu.html"
+                <a asp-controller="Menu" asp-action="Index" id="Menu"
                     class="text-decoration-none color inherit-color d-flex align-items-center gap-3  py-1 margin-left-sidebar-element ">
-                    <img src="~/images/sidebar-icons/menu.svg" class="sidebar-icons" alt="">
-                    <span class="fw-bold sidebar-font ">Menu</span>
+                    <img src="~/images/sidebar-icons/menu.svg" class="sidebar-icons" alt="" id="Menu-svg">
+                    <span class="fw-bold sidebar-font" id="Menu-span">Menu</span>
                 </a>
-                <a href="./tables.html"
+                <a asp-controller="TableAndSection" asp-action="Index" id="TableAndSection"
                     class="text-decoration-none color inherit-color d-flex align-items-center gap-3  py-1 margin-left-sidebar-element ">
-                    <img src="~/images/sidebar-icons/table-and-section.svg" class="sidebar-icons" alt="">
-                    <span class="fw-bold sidebar-font">Table and Section</span>
+                    <img src="~/images/sidebar-icons/table-and-section.svg" class="sidebar-icons" alt="" id="TableAndSection-svg">
+                    <span class="fw-bold sidebar-font" id="TableAndSection-span">Table and Section</span>
                 </a>
-                <a href="./taxes.html"
+                <a asp-controller="TaxAndFee" asp-action="Index" id="TaxAndFee"
                     class="text-decoration-none color inherit-color d-flex align-items-center gap-3  py-1 margin-left-sidebar-element ">
-                    <img src="~/images/sidebar-icons/taxes-and-fees.svg" class="sidebar-icons" alt="">
-                    <span class="fw-bold sidebar-font">Taxes and Fees</span>
+                    <img src="~/images/sidebar-icons/taxes-and-fees.svg" class="sidebar-icons" alt="" id="TaxAndFee-svg">
+                    <span class="fw-bold sidebar-font" id="TaxAndFee-span">Taxes and Fees</span>
                 </a>
-                <a href="./orders.html"
+                <a asp-controller="Order" asp-action="Index" id="Order"
                     class="text-decoration-none color inherit-color d-flex align-items-center gap-3  py-1 margin-left-sidebar-element ">
-                    <img src="~/images/sidebar-icons/orders.svg" class="sidebar-icons" alt="">
-                    <span class="fw-bold sidebar-font">Orders</span>
+                    <img src="~/images/sidebar-icons/orders.svg" class="sidebar-icons" alt="" id="Order-svg">
+                    <span class="fw-bold sidebar-font" id="Order-span">Orders</span>
                 </a>
-                <a href="./customers.html"
+                <a asp-controller="Customer" asp-action="Index" id="Customer"
                     class="text-decoration-none color inherit-color d-flex align-items-center gap-3  py-1 margin-left-sidebar-element ">
-                    <img src="~/images/sidebar-icons/customers.svg" class="sidebar-icons" alt="">
-                    <span class="fw-bold sidebar-font">Customers</span>
+                    <img src="~/images/sidebar-icons/customers.svg" class="sidebar-icons" alt="" id="Customer-svg">
+                    <span class="fw-bold sidebar-font" id="Customer-span">Customers</span>
                 </a>
 
             </div>
@@ -101,35 +101,38 @@
                             <img src="~/images/sidebar-icons/users.svg" class="sidebar-icons" alt="" id="UserList-svg-mobile">
                             <span class="fw-bold sidebar-font " id="UserList-span-mobile">Users</span>
                         </a>
-                        <a href="./permissions.html"
-                            class="text-decoration-none color inherit-color d-flex align-items-center gap-3  py-1 margin-left-sidebar-element" id="RoleAndPermission-mobile">
-                            <img src="~/images/sidebar-icons/role-and-permission.svg" class="sidebar-icons" id="RoleAndPermission-svg-mobile" alt="">
-                            <span id="RoleAndPermission-span-mobile" class="fw-bold sidebar-font">Roles and Permissions</span>
-                        </a>
-                        <a href="./menu.html"
+                        @if (@Model.RoleId == 1)
+                        {
+                            <a asp-controller="RoleAndPermission" asp-action="Index" id="RoleAndPermission-mobile"
+                                class="text-decoration-none color inherit-color d-flex align-items-center gap-3  py-1 margin-left-sidebar-element ">
+                                <img src="~/images/sidebar-icons/role-and-permission.svg" class="sidebar-icons" id="RoleAndPermission-svg-mobile" alt="">
+                                <span class="fw-bold sidebar-font" id="RoleAndPermission-span-mobile">Roles and Permissions</span>
+                            </a>
+                        }
+                        <a asp-controller="Menu" asp-action="Index" id="Menu-mobile"
                             class="text-decoration-none color inherit-color d-flex align-items-center gap-3  py-1 margin-left-sidebar-element ">
-                            <img src="~/images/sidebar-icons/menu.svg" class="sidebar-icons" alt="">
-                            <span class="fw-bold sidebar-font">Menu</span>
+                            <img src="~/images/sidebar-icons/menu.svg" class="sidebar-icons" alt="" id="Menu-svg-mobile">
+                            <span class="fw-bold sidebar-font" id="Menu-span-mobile">Menu</span>
                         </a>
-                        <a href="./tables.html"
+                        <a asp-controller="TableAndSection" asp-action="Index" id="TableAndSection-mobile"
                             class="text-decoration-none color inherit-color d-flex align-items-center gap-3  py-1 margin-left-sidebar-element ">
-                            <img src="~/images/sidebar-icons/table-and-section.svg" class="sidebar-icons" alt="">
-                            <span class="fw-bold sidebar-font">Table and Section</span>
+                            <img src="~/images/sidebar-icons/table-and-section.svg" class="sidebar-icons" alt="" id="TableAndSection-svg-mobile">
+                            <span class="fw-bold sidebar-font" id="TableAndSection-span-mobile">Table and Section</span>
                         </a>
-                        <a href="./taxes.html"
+                        <a asp-controller="TaxAndFee" asp-action="Index" id="TaxAndFee-mobile"
                             class="text-decoration-none color inherit-color d-flex align-items-center gap-3  py-1 margin-left-sidebar-element ">
-                            <img src="~/images/sidebar-icons/taxes-and-fees.svg" class="sidebar-icons" alt="">
-                            <span class="fw-bold sidebar-font">Taxes and Fees</span>
+                            <img src="~/images/sidebar-icons/taxes-and-fees.svg" class="sidebar-icons" alt="" id="TaxAndFee-svg-mobile">
+                            <span class="fw-bold sidebar-font" id="TaxAndFee-span-mobile">Taxes and Fees</span>
                         </a>
-                        <a href="./orders.html"
+                        <a asp-controller="Order" asp-action="Index" id="Order-mobile"
                             class="text-decoration-none color inherit-color d-flex align-items-center gap-3  py-1 margin-left-sidebar-element ">
-                            <img src="~/images/sidebar-icons/orders.svg" class="sidebar-icons" alt="">
-                            <span class="fw-bold sidebar-font">Orders</span>
+                            <img src="~/images/sidebar-icons/orders.svg" class="sidebar-icons" alt="" id="Order-svg-mobile">
+                            <span class="fw-bold sidebar-font" id="Order-span-mobile">Orders</span>
                         </a>
-                        <a href="./customers.html"
+                        <a asp-controller="Customer" asp-action="Index" id="Customer-mobile"
                             class="text-decoration-none color inherit-color d-flex align-items-center gap-3  py-1 margin-left-sidebar-element ">
-                            <img src="~/images/sidebar-icons/customers.svg" class="sidebar-icons" alt="">
-                            <span class="fw-bold sidebar-font">Customers</span>
+                            <img src="~/images/sidebar-icons/customers.svg" class="sidebar-icons" alt="" id="Customer-svg-mobile">
+                            <span class="fw-bold sidebar-font" id="Customer-span-mobile">Customers</span>
                         </a>
 
                     </div>

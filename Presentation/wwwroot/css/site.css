@@ -268,8 +268,8 @@ td{
   color: #0066A7;
 }
 .active-user {
-  background-color: #99D363;
-  color: white;
+  background-color: #7bff00;
+  color: #000000;
   padding: 5px 10px;
   border-radius: 12px;  
 }
